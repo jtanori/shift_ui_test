@@ -14,3 +14,18 @@ In the included home-test.psd there is a basic homepage design for a fake websit
 
 ## Notes
 Feel free to fill in any gaps that may be missing in the mock. Add any magic as you see necessary.
+
+## Requirements
+* [Node.js](http://nodejs.org)
+* [NPM](https://www.npmjs.org)
+* [Yeoman.io](http://yeoman.io)
+
+## Install
+Run the following commands after cloning this repo
+* $ npm install
+* $ bower install
+
+## Run
+* $ grunt server
+
+You can additionally run other yeoman command for different project stages (test, build, etc...)
