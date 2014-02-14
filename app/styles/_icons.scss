@@ -1,0 +1,30 @@
+@import 'variables';
+
+.icon.shift-icon {
+	background-image: url(/images/icons.png);
+	height: 50px;
+	display: inline-block;
+	width: 50px;
+}
+// We could have used a defined variable and iterate over all those icons
+// to create dynamic positioning but we only have 7, 7 of them, makes no sense
+// now
+.shift-icon.shift-icon-highfive{
+	background-position: 0 0;
+}
+
+.shift-icon.shift-icon-reload{
+	background-position: 0 -50px;
+}
+
+.shift-icon.shift-icon-ok{
+	background-position: 0 -100px;
+}
+
+.shift-icon.shift-icon-mail{
+	background-position: 0 -150px;
+}
+
+.shift-icon.shift-icon-secure{
+	background-position: 0 -200px;
+}
