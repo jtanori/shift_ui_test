@@ -303,16 +303,6 @@ module.exports = function (grunt) {
                 src: '{,*/}*.css'
             }
         },
-        modernizr: {
-            devFile: '<%= yeoman.app %>/bower_components/modernizr/modernizr.js',
-            outputFile: '<%= yeoman.dist %>/bower_components/modernizr/modernizr.js',
-            files: [
-                '<%= yeoman.dist %>/scripts/{,*/}*.js',
-                '<%= yeoman.dist %>/styles/{,*/}*.css',
-                '!<%= yeoman.dist %>/scripts/vendor/*'
-            ],
-            uglify: true
-        },
         concurrent: {
             server: [
                 'compass',
@@ -333,9 +323,6 @@ module.exports = function (grunt) {
             ]
         },
         bower: {
-            options: {
-                exclude: ['modernizr']
-            },
             all: {
                 rjsConfig: '<%= yeoman.app %>/scripts/main.js'
             }
@@ -373,7 +360,6 @@ module.exports = function (grunt) {
         'concat',
         'cssmin',
         'uglify',
-        'modernizr',
         'copy:dist',
         'rev',
         'usemin'

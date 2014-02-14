@@ -13,9 +13,6 @@
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -161,23 +158,8 @@
         <script src="bower_components/jquery/jquery.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
-        <script>
-        	$(function(){
-        		$('#signUp').on('click', function(){
-        			alert('Welcome to Fight Club. The first rule of Fight Club is: you do not talk about Fight Club.');
-        		});
 
-        		$('#signIn').on('click', function(){
-        			alert('Are you ready for that? Checking into a Vegas hotel under a phony name with intent to commit capital fraud and a head full of acid?');
-        		});
-
-        		$('#facebook, #facebook-m').on('click', function(){
-        			alert('No cool quote found fo the Social Network.');
-        		});
-
-        		$('#google, #google-m').on('click', function(){
-        			alert("All that don't be evil thing was just baloney, I mean, the guys are getting ready to change the company's name to Skynet.");
-        		});
-        	});
-        </script>
+        <!-- build:js scripts/main.js -->
+        <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
+        <!-- endbuild -->
 </html>

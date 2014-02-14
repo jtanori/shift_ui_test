@@ -1,58 +1,28 @@
+/* global alert, require */
 require.config({
     paths: {
-        jquery: '../bower_components/jquery/jquery',
-        bootstrapAffix: '../bower_components/sass-bootstrap/js/affix',
-        bootstrapAlert: '../bower_components/sass-bootstrap/js/alert',
-        bootstrapButton: '../bower_components/sass-bootstrap/js/button',
-        bootstrapCarousel: '../bower_components/sass-bootstrap/js/carousel',
-        bootstrapCollapse: '../bower_components/sass-bootstrap/js/collapse',
-        bootstrapDropdown: '../bower_components/sass-bootstrap/js/dropdown',
-        bootstrapPopover: '../bower_components/sass-bootstrap/js/popover',
-        bootstrapScrollspy: '../bower_components/sass-bootstrap/js/scrollspy',
-        bootstrapTab: '../bower_components/sass-bootstrap/js/tab',
-        bootstrapTooltip: '../bower_components/sass-bootstrap/js/tooltip',
-        bootstrapTransition: '../bower_components/sass-bootstrap/js/transition'
-    },
-    shim: {
-        bootstrapAffix: {
-            deps: ['jquery']
-        },
-        bootstrapAlert: {
-            deps: ['jquery']
-        },
-        bootstrapButton: {
-            deps: ['jquery']
-        },
-        bootstrapCarousel: {
-            deps: ['jquery']
-        },
-        bootstrapCollapse: {
-            deps: ['jquery']
-        },
-        bootstrapDropdown: {
-            deps: ['jquery']
-        },
-        bootstrapPopover: {
-            deps: ['jquery']
-        },
-        bootstrapScrollspy: {
-            deps: ['jquery']
-        },
-        bootstrapTab: {
-            deps: ['jquery']
-        },
-        bootstrapTooltip: {
-            deps: ['jquery']
-        },
-        bootstrapTransition: {
-            deps: ['jquery']
-        }
+        jquery: '../bower_components/jquery/jquery'
     }
 });
 
-require(['app', 'jquery'], function (app, $) {
+require(['jquery'], function ($) {
     'use strict';
     // use app here
-    console.log(app);
     console.log('Running jQuery %s', $().jquery);
+
+    $('#signUp').on('click', function(){
+		alert('Welcome to Fight Club. The first rule of Fight Club is: you do not talk about Fight Club.');
+	});
+
+	$('#signIn').on('click', function(){
+		alert('Are you ready for that? Checking into a Vegas hotel under a phony name with intent to commit capital fraud and a head full of acid?');
+	});
+
+	$('#facebook, #facebook-m').on('click', function(){
+		alert('No cool quote found fo the Social Network.');
+	});
+
+	$('#google, #google-m').on('click', function(){
+		alert('All that don\'t be evil thing was just baloney, I mean, the guys are getting ready to change the company\'s name to Skynet.');
+	});
 });
